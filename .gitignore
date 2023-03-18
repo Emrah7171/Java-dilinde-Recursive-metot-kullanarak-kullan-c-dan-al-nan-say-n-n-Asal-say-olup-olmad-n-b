@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class asal1 {
+    static  int asl(int n1){
+       int  sayac=0;
+       for (int i=2;i<n1;i++){
+            if (n1%i==0){
+                sayac++;
+
+            }
+        }return sayac;
+    }
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.print("SAYI GIRINIZ:");
+        int n1= input.nextInt();
+        //System.out.println(asl(n1));
+        if (asl(n1)==0){
+            System.out.println("ASAL SAYI");
+        }else {
+            System.out.println("ASAL DEGIL");
+        }
+
+
+    }
+}
